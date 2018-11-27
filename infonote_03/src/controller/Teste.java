@@ -6,7 +6,7 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		Usuario user = new Usuario(1, "joseph", "climber", "Joseph Climber", "josephclimber@gmail.com", "2222-3344");
+		Usuario user = new Usuario(1, "Mr. Catra", "Borel001", "Wagner", "mrcatra@gmail.com", "2222-3344");
 
 		user.mostrar();
 
@@ -24,18 +24,18 @@ public class Teste {
 
 		System.out.println("=======================================");
 
-		Endereco edc = new Endereco("Grokono", "37825048", "Imaginondo", "Imaginândia", "Número 257", "Casa 05",
-				"ao lado da Estátua de Gogino");
+		Endereco edc = new Endereco("Avenida", "400", "Bairro Imperial", "São Cristovão", "Rio de Janeiro", "RJ",
+				"21870-190");
 		edc.mostrar();
 
 		System.out.println("=======================================");
 
-		Pedido pd = new Pedido("27/09", "Cartão", "À caminho", 23, 357.54);
+		Pedido pd = new Pedido("27/09", "Dinheiro", "OK", 23, 357.54);
 		pd.mostrar();
 
 		System.out.println("=======================================");
 
-		Notebook nt1 = new Notebook("Aparelho eletrônico", "20/09", "Frágil", "2016", 1, 35, 150.50);
+		Notebook nt1 = new Notebook("Acer 72145", "HD 500G, 18G de Memória, Tela 15\"", "Frágil", "2016", 1, 35, 150.50);
 		nt1.mostrar();
 
 		System.out.println("=======================================");

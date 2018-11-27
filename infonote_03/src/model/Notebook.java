@@ -2,13 +2,13 @@ package model;
 
 public class Notebook {
 
-	public String modelo;
-	public String descricao;	
-	public String dataCadastro;
-	public String figura;
-	 int numeroNote;
-	 int estoque;
-	 double precoUnitario;
+	private String modelo;
+	private String descricao;	
+	private String dataCadastro;
+	private String figura;
+	private int numeroNote;
+	private int estoque;
+	private double precoUnitario;
 	
 	public String getModelo() {
 		return modelo;

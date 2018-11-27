@@ -2,8 +2,8 @@ package model;
 
 public class ItemDePedido {
 
-	int qtde;
-	double subtotal;
+	private int qtde;
+	private double subtotal;
 
 	public int getQtde() {
 		return qtde;

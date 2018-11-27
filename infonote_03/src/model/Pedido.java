@@ -2,11 +2,11 @@ package model;
 
 public class Pedido {
 
-	public String dataEmissao;
-	public String formaDePagamento;
-	public String situacao;
-	int numero;
-	double valorTotal;
+	private String dataEmissao;
+	private String formaDePagamento;
+	private String situacao;
+	private int numero;
+	private double valorTotal;
 
 	public String getDataEmissao() {
 		return dataEmissao;
