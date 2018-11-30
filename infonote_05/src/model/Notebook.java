@@ -90,6 +90,9 @@ public class Notebook {
 
 	}
 
+	
+	
+
 	public void mostrar() {
 
 		System.out.println("`\n\nNotebook:\n");

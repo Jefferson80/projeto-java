@@ -58,7 +58,6 @@ public class Usuario {
 
 	}
 
-	
 	@Override
 	public String toString() {
 		return "Usuario [\nmatricula=" + matricula + ",\n login=" + login + ",\n senha=" + senha + ", \n nome=" + nome
@@ -80,28 +79,6 @@ public class Usuario {
 
 	}
 
-	// inserir o pedido no vetor
-	public boolean inserirPedido(Pedido pedido){
-	for (int i = 0; i < pedidos.length; i++) {
-	if (pedidos[i] == null) {
-	pedidos[i] = pedido;
-	return true;
-	}
-	}
-	return false;
-	}
-	// inserir o endereco no vetor
-	public boolean inserirEndereco (Endereco end) {
-	for (int i = 0; i < enderecos.length; i++) {
-	if (enderecos[i] == null){
-	enderecos[i] = end;
-	return true;
-	}
-	}
-	return false;
-	}
-	
-	
 	public void mostrar() {
 
 		System.out.println("`\n\nUsuário:\n");

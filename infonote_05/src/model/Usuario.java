@@ -12,8 +12,6 @@ public class Usuario {
 	public Endereco enderecos[] = new Endereco[10];
 	public Pedido pedidos[] = new Pedido[10];
 
-	
-	
 	public int getMatricula() {
 		return matricula;
 	}
@@ -63,7 +61,14 @@ public class Usuario {
 
 	}
 
-	
+	public Endereco[] getEnderecos() {
+		return enderecos;
+	}
+
+	public Pedido[] getPedidos() {
+		return pedidos;
+	}
+
 	@Override
 	public String toString() {
 		return "Usuario [\nmatricula=" + matricula + ",\n login=" + login + ",\n senha=" + senha + ", \n nome=" + nome
@@ -85,6 +90,28 @@ public class Usuario {
 
 	}
 
+	// inserir o pedido no vetor
+	public boolean inserirPedido(Pedido pedido) {
+		for (int i = 0; i < pedidos.length; i++) {
+			if (pedidos[i] == null) {
+				pedidos[i] = pedido;
+				return true;
+			}
+		}
+		return false;
+	}
+
+	// inserir o endereco no vetor
+	public boolean inserirEndereco(Endereco end) {
+		for (int i = 0; i < enderecos.length; i++) {
+			if (enderecos[i] == null) {
+				enderecos[i] = end;
+				return true;
+			}
+		}
+		return false;
+	}
+
 	public void mostrar() {
 
 		System.out.println("`\n\nUsuário:\n");
@@ -94,8 +121,6 @@ public class Usuario {
 		System.out.println("Nome: " + this.nome);
 		System.out.println("Email: " + this.email);
 		System.out.println("Telefone: " + this.telefone);
-	
-		
-	
+
 	}
 }
